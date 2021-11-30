@@ -119,7 +119,7 @@ const PayPalButton = (props) => {
             purchase_units: [
               {
                 amount: {
-                  value: itemTotal,
+                  value: total,
                   breakdown: {
                     item_total: {
                       currency_code: "USD",
@@ -127,11 +127,11 @@ const PayPalButton = (props) => {
                     },
                     shipping: {
                       currency_code: "USD",
-                      value: "0",
+                      value: shippingTotal,
                     },
                     tax_total: {
                       currency_code: "USD",
-                      value: "0",
+                      value: taxTotal,
                     },
                   },
                 },
