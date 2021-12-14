@@ -27,7 +27,7 @@ namespace Services
         {
             SendGridMessage msg = new SendGridMessage()
             {
-                From = new EmailAddress("admin@world-prints.com", "World Prints"),
+                From = new EmailAddress("wpadmin@dispostable.com", "World Prints"),
                 Subject = email.Subject,
                 PlainTextContent = "Thank you. Your subscription has been confirmed. You've been added to our list and will hear from us soon. World Prints",
                 HtmlContent = System.IO.File.ReadAllText(_environment.WebRootPath + "/EmailTemplates/Subscription.html"),
@@ -42,7 +42,7 @@ namespace Services
         {
             SendGridMessage msg = new SendGridMessage()
             {
-                From = new EmailAddress("admin@world-prints.com", "World Prints"),
+                From = new EmailAddress("wpadmin@dispostable.com", "World Prints"),
                 Subject = "Welcome to World Prints! Please complete your registration",
                 PlainTextContent = $"Thank you for creating a new account. Please finish registration by visiting https://localhost:3000/confirm?token={token}. World Prints",
                 HtmlContent = System.IO.File.ReadAllText(_environment.WebRootPath + "/EmailTemplates/Registration.html"),
