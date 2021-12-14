@@ -8,7 +8,7 @@ using SendGrid.Helpers.Mail;
 using Microsoft.AspNetCore.Hosting;
 
 
-namespace Sabio.Services
+namespace Services
 {
     public class EmailService : IEmailService
     {
